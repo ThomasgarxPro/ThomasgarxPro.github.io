@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+position: relative;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Rubik', sans-serif;
+text-decoration: none;
+text-align: center;
+}
+
+.main-container-header {
+height: 200px;
+background: linear-gradient(#e66465, #9198e5);
+}
+
+.main-container-all-content {
+width: 80%;
+margin: auto;
+}
+
+.section-profil {
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+align-content:center;
+padding: 25px;
+
+}
+
+.profil-pic-box{
+display:flex;
+flex-direction:column;
+}
+
+.profil-pic{
+width:260px;
+height:250px;
+border-radius:3px;
+}
+
+.box-link{
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+margin: 10px;
+}
+
+.btn-link-git {
+border-width: 3px;
+border-radius: 3px;
+border-style: solid;
+border-color: #4f924f;
+width: 100px;
+}
+
+.btn-link-linke {
+border-color: #6464b7;
+border-width: 3px;
+border-radius: 3px;
+border-style: solid;
+width: 100px;
+}
+
+.description-profil {
+width:65%;
+}
