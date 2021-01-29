@@ -3,69 +3,87 @@ html {
 }
 
 * {
-position: relative;
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: 'Rubik', sans-serif;
-text-decoration: none;
-text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-align: center;
 }
 
 .main-container-header {
-height: 200px;
-background: linear-gradient(#e66465, #9198e5);
+    height: 250px;
+    background: linear-gradient(#e66465, #43b121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-header {
+    padding: 50px;
+}
+#title-work {
+    color: rgb(250, 250, 250);
+}
+#strong-title {
+    color: rgb(231, 231, 231);
+}
+
+.header-name{
+    color: rgb(250, 250, 250);
 }
 
 .main-container-all-content {
-width: 80%;
-margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 .section-profil {
-display:flex;
-flex-direction:row;
-justify-content:space-between;
-align-items:center;
-align-content:center;
-padding: 25px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+    padding: 25px;
 
 }
 
 .profil-pic-box{
-display:flex;
-flex-direction:column;
+    display:flex;
+    flex-direction:column;
 }
 
 .profil-pic{
-width:260px;
-height:250px;
-border-radius:3px;
+    width:260px;
+    height:250px;
+    border-radius:3px;
 }
 
 .box-link{
-display:flex;
-flex-direction:row;
-justify-content: space-around;
-margin: 10px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin: 10px;
 }
 
 .btn-link-git {
-border-width: 3px;
-border-radius: 3px;
-border-style: solid;
-border-color: #4f924f;
-width: 100px;
+    border-width: 3px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #4f924f;
+    width: 100px;
 }
 
 .btn-link-linke {
-border-color: #6464b7;
-border-width: 3px;
-border-radius: 3px;
-border-style: solid;
-width: 100px;
+    border-color: #6464b7;
+    border-width: 3px;
+    border-radius: 3px;
+    border-style: solid;
+    width: 100px;
 }
 
 .description-profil {
-width:65%;
+    width:65%;
+    color: rgb(51, 51, 51);
 }
