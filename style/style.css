@@ -43,7 +43,52 @@ html {
         color: rgb(250, 250, 250);
         top: 100px;
     }
+    
+    .logo {
+        width: 32px;
+        height: 35px;
+        padding-top: 5px;
+    }
 
+    nav {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(34, 34, 34);
+        position: fixed;
+        z-index: 100000;
+        top: 0px;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+    nav ul::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: rgb(231, 231, 231);
+        border-bottom: 2px solid transparent;
+        padding: 10px 0px;
+      
+    }
+
+    nav a:hover{
+        color: rgb(185, 172, 235);
+        border-bottom: 2px solid rgb(71, 54, 131);
+       
+    }
     .main-container-all-content {
         width: 100%;
         margin: auto;
@@ -52,7 +97,7 @@ html {
     
     .main-container-profil h1 {
         padding: 20px;
-        color: rgb(34, 34, 34);
+        color: rgb(51, 51, 51);
     }
 
     .section-profil {
@@ -147,6 +192,52 @@ html {
         border-radius: 10px;
     }
 
+    .main-container-project {
+        width: 100%;
+        height: 250px;
+        background-image: url(../img/background-project.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    
+    }
+
+    .main-container-project {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .main-container-project h1 {
+        padding: 20px;
+        color: rgb(231, 231, 231);
+    }
+
+    .main-container-project article{
+        position:relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content-project{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-picture {
+        width: 20rem;
+        height: auto;
+        opacity: 85%;
+        border-radius: 5px;
+    }
+
+    .text-project {
+        font-weight: bolder;
+        color: rgb(22, 22, 22);
+        padding: 20px;
+    }
+
+    
+
     .main-container-skill {
         height: auto;
         width: 100%;
@@ -215,9 +306,8 @@ html {
         height: 100px;
         width: 100px;
     }
-    /* .content-skills-2 div:nth-child(6) {
-        
-    } */
+   
+    
 }
 
 @media all and (min-width:768px) { 
@@ -245,7 +335,7 @@ html {
 @media all and (min-width:1280px) and (orientation: landscape) {
     
     .main-container-header {
-        height: 250px;
+        height: 285px;
         background-image: url("../img/background-header.jpg");
         display: flex;
         flex-direction: column;
@@ -267,9 +357,13 @@ html {
         color: rgb(250, 250, 250);
     }
 
+   
+
+  
     .main-container-all-content {
         width: 100%;
         margin: auto;
+        position: initial;
     }
 
     .section-profil {
@@ -291,24 +385,24 @@ html {
         width:260px;
         height:250px;
         border-radius:8px;
-        filter: sepia(0.5);
-        -webkit-filter: sepia(0.5);
-        -moz-filter: sepia(0.5);
-        -o-filter: sepia(0.5);
-        -ms-filter: sepia(0.5);
-        transition: ease-in-out all 250ms ;
+        filter: sepia(0.3);
+        -webkit-filter: sepia(0.3);
+        -moz-filter: sepia(0.3);
+        -o-filter: sepia(0.3);
+        -ms-filter: sepia(0.3);
+        transition: ease-in-out all 250ms;
     }
 
            
     
     .profil-pic:hover
     {
-            filter: sepia(0);
-            -webkit-filter: sepia(0);
-            -moz-filter: sepia(0);
-            -o-filter: sepia(0);
-            -ms-filter: sepia(0);
-            transition: ease-in-out all 250ms ;
+        filter: sepia(0);
+        -webkit-filter: sepia(0);
+        -moz-filter: sepia(0);
+        -o-filter: sepia(0);
+        -ms-filter: sepia(0);
+        transition: ease-in-out all 250ms ;
     }
 
 
@@ -326,6 +420,30 @@ html {
         color: rgb(51, 51, 51);
     }
 
+    .main-container-project {
+        height: 550px; 
+    }
+    .main-container-project h1 {
+        padding: 50px;
+    }
+
+    .content-project{
+        flex-direction: row;
+    }
+
+    .project-picture {
+        width: 35rem;
+        transition: ease-in-out all 250ms;
+    }
+
+    .project-picture:hover {
+        width: 40rem;
+        height: auto;
+        opacity: initial;
+        border: solid rgb(71, 54, 131) 3px;
+        transition: ease-in-out all 250ms;
+    }
+
     .content-skills-1{
         flex-direction: row;
     }
@@ -333,5 +451,7 @@ html {
     .content-skills-2{
         flex-direction: row;
     }
-        
+
+    
+    /* background-project.jpg */
 }
